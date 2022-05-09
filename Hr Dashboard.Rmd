@@ -125,7 +125,9 @@ avgnewhire=round(mean(newhire_bymonth$count),2)
   
 valueBox(avgnewhire,icon = "fa-user-plus",caption = "Average monthly new hires",color = "green")
 ```
+
 ### New hire split by Employment
+
 ```{r}
 h5=global %>% 
   filter(`Type of movement`=="Entry") %>% 
@@ -138,6 +140,7 @@ p5
 
 
 ### New hire split by Work Authorisation
+
 ```{r}
 h6=global %>% 
   filter(`Type of movement`=="Entry") %>% 
